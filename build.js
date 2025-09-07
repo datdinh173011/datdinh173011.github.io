@@ -64,13 +64,13 @@ ${navigation}
 
 ${about}
 
+${education}
+
 ${skills}
 
 ${experience}
 
 ${projects}
-
-${education}
 
 ${contact}
 
