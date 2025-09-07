@@ -1,0 +1,16 @@
+{
+  "name": "datdinh-portfolio",
+  "version": "1.0.0",
+  "description": "Nguyen Dinh Dat's Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx live-server .",
+    "start": "npm run build && npm run dev"
+  },
+  "author": "Nguyen Dinh Dat",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f8fafc; /* bg-slate-50 */
+    color: #1e293b; /* text-slate-900 */
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 2rem;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 3px;
+    background-color: #764ba2; /* Purple accent */
+    border-radius: 2px;
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.skill-tag {
+    background-color: #e0e7ff; /* bg-indigo-100 */
+    color: #4338ca; /* text-indigo-700 */
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* full rounded */
+    font-weight: 500;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.experience-item {
+    border-left: 4px solid #764ba2;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0.5rem;
+    width: 16px;
+    height: 16px;
+    background-color: #764ba2;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+/* Simple fade-in animation for sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
